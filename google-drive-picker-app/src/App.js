@@ -11,8 +11,8 @@ function App() {
   const handleOpenPicker = () => {
     try{
       openPicker({
-        clientId: "287088794527-3r75jpl5hluuldrp452pv1mcs0ccrtjs.apps.googleusercontent.com",
-        developerKey: "AIzaSyBl9k0C5WcYn2COhFwXOuboZn1x87q1R-4",
+        clientId: process.env.React_App_Client_Id,
+        developerKey: process.env.React_App_Google_Cloud_API_Key,
         viewId: "DOCS",
         // token: token, // pass oauth token in case you already have one
         showUploadView: true,
